@@ -4,10 +4,10 @@ phases:
   install:
     runtime-versions:
       nodejs: 18
-      commands:
-    - echo "Logging into CodeArtifact..."
-    - aws codeartifact login --tool npm --repository MyNodeApp --domain node-app --domain-owner 724769809986 --region eu-north-1
-    - npm install
+    commands:
+      - echo "Logging into CodeArtifact..."
+      - aws codeartifact login --tool npm --repository MyNodeApp --domain node-app --domain-owner 724769809986 --region eu-north-1
+      - npm install
   pre_build:
     commands:
       - echo "Running pre-build steps..."
