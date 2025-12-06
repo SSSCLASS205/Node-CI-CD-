@@ -2,5 +2,10 @@
   "dependencies": {
     "express": "^5.2.1",
     "init": "^0.1.2"
+  },"scripts": {
+    "test":"jest"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0"
   }
 }
